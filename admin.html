@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Options - Food Waste Reduction Platform</title>
+    <link rel="stylesheet" href="userop.css">
+    <style>
+        /* Inline Styling for Buttons */
+        .option-button, .logout-btn, .history-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            text-align: center;
+            width: 250px;
+            margin-bottom: 10px;
+        }
+
+        /* Change button color on hover */
+        .option-button:hover, .logout-btn:hover, .history-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="options-container">
+            <h1>Admin Options</h1>
+            <a href="manage_users.php" class="option-button">Manage Users</a>
+            <a href="view_donations.php" class="option-button">View Donations</a>
+            <a href="logout.php" class="logout-btn">Logout</a> <!-- Logout Button -->
+        </div>
+    </div>
+</body>
+</html>

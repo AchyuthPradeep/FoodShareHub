@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="manage_users.php">Manage Users</a></li> <!-- Link to manage users page -->
+            <li><a href="view_donations.php">View Donations</a></li>
+            <li><a href="logout.php">Logout</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <section id="manage-users">
+            <h2>Manage Users</h2>
+            <p>View and manage platform users.</p>
+
+            <!-- Add New Admin Form -->
+            <h3>Add New Admin</h3>
+            <form action="add_admin.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Add Admin">
+            </form>
+
+            <!-- Add functionality to view/edit/delete users here (optional) -->
+        </section>
+    </div>
+</body>
+</html>

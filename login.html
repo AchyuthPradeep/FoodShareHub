@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - FoodShareHub</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        /* Apply background image to the body */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('C:\xampp\htdocs\mini project\donate.jpg'); /* Adjust path based on your folder structure */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container for the form */
+        .container {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background to make text readable */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+        }
+
+        /* Site name styling */
+        .site-name {
+            text-align: center;
+            font-size: 1.5em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        /* Heading styling */
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4CAF50; /* Green color for FoodShareHub */
+        }
+
+        /* Input field styling */
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .input-group input:focus, .input-group select:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        /* Submit button styling */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Link for registration */
+        .back-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .back-link a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form container padding */
+        .form-container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="site-name">
+                <h2>FoodShareHub</h2>
+            </div>
+
+            <h1>Login</h1>
+            <form id="loginForm" method="POST" action="loginsubmit.php">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="role">Select Role</label>
+                    <select id="role" name="role" required>
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="back-link">
+                <p>Don't have an account? <a href="register.html">Register here</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
